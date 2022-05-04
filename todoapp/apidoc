@@ -1,0 +1,28 @@
+api
+====
+    1)
+    url:http://127.0.0.1:8000/ api/v2/todos
+        method:GET
+        data:None
+        response:{task_name:"task1"completed_status:True,user:"user}
+
+        method:POST
+        for creating a new todo
+        data:{task_name:"task1"completed_status:True,user:"user}
+        resp:201 created
+
+    2)
+    url:http://127.0.0.1:8000/api/v2/todos/2
+        method:GET
+        dat:NOne
+        response:{id:2,task_name:"task1"completed_status:True,user:"user"}
+
+        method:PUT
+        data:{id:2,task_name:"ebill"completed_status:True,user:"user"}
+
+
+        method:DELETE
+        data:None
+
+
+
